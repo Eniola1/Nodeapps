@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%- include('common/header'); %>
+    <h1>Profile page</h1>
+    <%= user.name %><br>
+    <%= user.email %><br>
+    <%= user.country %><br>
+
+    <ul>
+        <% user.skills.forEach((item)=>{%>
+
+            <li><%= item %></li>
+
+        <% }); %>
+    </ul>
+</body>
+</html>
